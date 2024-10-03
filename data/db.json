@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "id": 10001,
+            "name": "Basics To Advanced In React",
+            "price": 29,
+            "in_stock": true
+        },
+        {
+            "id": 10002,
+            "name": "Basics To Advanced In Angular",
+            "price": 5,
+            "in_stock": true
+        },
+        {
+            "id": 10003,
+            "name": "Basics To Advanced In Vue.js",
+            "price": 9,
+            "in_stock": false
+        }
+    ]
+}
