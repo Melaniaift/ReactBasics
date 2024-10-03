@@ -1,0 +1,8 @@
+.boxcard .box.success {
+    background-color: #e0ffe0; /* Light green background for completed tasks */
+}
+
+.boxcard .box.warning {
+    background-color: #fff3e0; /* Light green background for completed tasks */
+}
+

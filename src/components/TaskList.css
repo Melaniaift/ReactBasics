@@ -1,0 +1,64 @@
+.task-container {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-container h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.task-container .task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-container .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.task-container .task-item.completed {
+    background-color: #e0ffe0;
+    /* Light green background for completed tasks */
+}
+
+.task-container .task-name {
+    flex-grow: 1;
+}
+
+.task-container .task-name.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-container .delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.task-container .delete-button:hover {
+    background-color: var(--delete-btn);
+}
+
+.task-container .little{
+    font-size: 12px;
+}
