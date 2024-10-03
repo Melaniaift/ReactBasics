@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './TaskList.css';
 import { TaskCard } from './TaskCard';
 import { BoxCard } from './BoxCard';
+import { AddTask } from './AddTask';
 
 export const TaskList = (props) => {
     const [tasks, setTasks] = useState([
@@ -18,7 +19,8 @@ export const TaskList = (props) => {
     }
     return (
         <div className="task-container">
-            <h1 style={{color: "#be3434"}}>Task List {props.title}</h1>
+            <h1 style={{ color: "#be3434" }}>Task List {props.title}</h1>
+            <AddTask />
             <ul className="task-list">
                 {tasks.length > 0 && (
                     <button onClick={() => setShow(!show)}>Toggle</button>
@@ -28,6 +30,7 @@ export const TaskList = (props) => {
                     <TaskCard key={task.id} task={task} handleDelete={handleDelete} />
                 ))}
             </ul>
+
             <BoxCard result="success">
                 <p className="little">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, suscipit?</p>
             </BoxCard>
