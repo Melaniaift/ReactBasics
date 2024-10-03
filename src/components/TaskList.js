@@ -3,13 +3,8 @@ import { useState } from 'react';
 import './TaskList.css';
 import { TaskCard } from './TaskCard';
 import { BoxCard } from './BoxCard';
-import { AddTask } from './AddTask';
 
-export const TaskList = (props) => {
-    const [tasks, setTasks] = useState([
-        { id: 1443, name: "Record Lectures", completed: false },
-        { id: 3334, name: "Edit React Lectures", completed: true },
-        { id: 1543, name: "Watch Lectures", completed: false }]);
+export const TaskList = ({title, tasks, setTasks}) => {
 
     const [show, setShow] = useState(true);
 
@@ -19,8 +14,7 @@ export const TaskList = (props) => {
     }
     return (
         <div className="task-container">
-            <h1 style={{ color: "#be3434" }}>Task List {props.title}</h1>
-            <AddTask />
+            <h1 style={{ color: "#be3434" }}>Task List {title}</h1>
             <ul className="task-list">
                 {tasks.length > 0 && (
                     <button onClick={() => setShow(!show)}>Toggle</button>
