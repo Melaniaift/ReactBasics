@@ -17,8 +17,7 @@ export const BoxCard = ({ result, children }) => {
                 </div>
             }
 
-            {/* <button onClick={hide} className="trigger">{!show ? 'Show' : 'Hide'}</button > */}
-            <button onClick={() => setShow(!show)} className="trigger">{show ? 'Hide' : 'Show'}</button >
+            <button onClick={hide} className="trigger">{!show ? 'Show' : 'Hide'}</button >
 
         </div>
     )

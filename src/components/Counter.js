@@ -4,10 +4,6 @@ import './Counter.css';
 export const Counter = () => {
     let [count, setCount] = useState(0);
 
-    function handleAdd() {
-        setCount(count + 1);
-    }
-
     function handleSub() {
         setCount(count - 1);
     }

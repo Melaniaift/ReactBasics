@@ -6,10 +6,6 @@ export const AddTask = ({ tasks, setTasks }) => {
     const taskRef = useRef("");
     const [progress, setProgress] = useState(false);
 
-    const handleChange = (e) => {
-        // setTaskValue(taskRef.current.value)
-    }
-
     const handleReset = () => {
         // setTaskValue("");
         taskRef.current.value = ""
