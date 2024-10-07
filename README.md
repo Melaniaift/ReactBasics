@@ -1,3 +1,7 @@
+#Check the application
+
+[React basics](https://reactbasicsmelift.netlify.app/)
+
 # Basic functionalities of React framework
 
 Used structure from [Create React App](https://github.com/facebook/create-react-app).
@@ -7,6 +11,9 @@ Used structure from [Create React App](https://github.com/facebook/create-react-
 [Json server](https://github.com/shahedbd/jsonServer)
 
 I run it using `json-server --watch data/db.json --port 8000`
+
+#Dependencies
+Installed concurrently for running the application and the json-server.
 
 ## Available Scripts
 
